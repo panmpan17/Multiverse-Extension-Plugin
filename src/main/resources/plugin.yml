@@ -1,0 +1,31 @@
+name: My-Multiverse-Extension
+main: com.gmail.panmpan.MultiverseExtension.MultiverseExtension
+authors: ['Michael']
+version: 1
+depend: ['Multiverse-Core']
+commands:
+  lobby:
+    description: 回到伺服器大廳
+    usage: /<command>
+  hub:
+    description: 回到伺服器大廳
+    usage: /<command>
+  survival:
+    description: 到生存伺服器裡
+    usage: /<command>
+  tpto:
+    description: 把你傳送到對方的位置 [如果你沒有權限，對方需要打 /tc]
+    usage: /<command> [player]
+  tphere:
+    description: 把對方傳送到你的位置 [如果你沒有權限，對方需要打 /tc]
+    usage: /<command> [player]
+  tc:
+    description: 接受傳送
+    usage: /<command>
+  td:
+    description: 拒絕傳送
+    usage: /<command>
+permissions:
+  mimebro.tp:
+    description: Allow you tp to a player without permission
+    default: op
